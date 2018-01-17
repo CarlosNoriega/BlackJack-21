@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>21</title>
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  	
+  	<script type="text/javascript" src="/js/phaser/phaser.min.js"></script>
+    <script type="text/javascript" src="/js/phaser/gameBoard.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://www.gstatic.com/firebasejs/3.5.1/firebase.js"></script>
+</head>
+
+<body>
+    <div>
+        <br><br>
+        <div class = "row center">
+            <a class="center white-text" style="font-size:25px;" onclick="exit()">Exit game</a>
+            
+        </div>
+        
+
+        
+        <div class = 'row'>
+            <div id="PlayersInGame" class="input-field col s2 m2">
+                <p class="flow-text white-text">Player 1</p>
+                <p class="flow-text white-text">Player 2</p>
+                <p class="flow-text white-text">Player 3</p>
+                <p class="flow-text amber-text text-amber accent-3">You</p>
+            </div>
+            
+            <div class="input-field col s10 m10">
+                <as id="phaser-container"></as>
+            </div>
+            
+        </div>
+        
+
+	    <div id="GameButtons" class="input-field col s2 m2">
+	        <a href="#"><img id="getCardButton"  class= "get" src="img/get.png" style="height:15%;" onclick="hit()"></img></a>
+	        <a href="#"><img id="passButton" class= "pass" src="img/pass.png" style="height:15%;"  onclick="pass()"></img></a>
+	   </div>
+   
+    </div>
+   
+   
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  	<script src="js/materialize.js"></script>
+  	<script src="js/init.js"></script>
+  	<script type="text/javascript" src="/js/game.js"></script>
+
+</body>
+
+</html>

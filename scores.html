@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>21</title>
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://www.gstatic.com/firebasejs/3.5.1/firebase.js"></script>
+	<script src="js/score.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <br><br>
+        <div class="scores">
+            <div class="row center" style="padding-top:50px;">
+            	 <!-- Dropdown Trigger -->
+	  			<a class='dropdown-button btn transparent' href='#' data-activates='dropdown' data-beloworigin="true">Scores by:</a>
+	
+	  			<!-- Dropdown Structure -->
+	  			<ul id='dropdown' class='dropdown-content black' >
+				    <li onclick="scoreGlobal()"><a href="#!" class="white-text">Name</a></li>
+				    <li>
+				    	<select class="white-text black" onchange="cambio(this.value)">
+					      <option disabled selected>Choose your country</option>
+					      <option value="México">Mexico</option>
+					      <option value="Canada">Canada</option>
+					      <option value="USA">USA</option>
+					    </select>
+				    </li>
+				    <li onclick="scoreFriends()"><a href="#!" class="white-text" >Friends</a></li>
+				</ul>
+				
+				<ul id='dropdownCounty' class='dropdown-content black' >
+				    <li><a href="#!" class="white-text">Mexico</a></li>
+				    <li><a href="#!" class="white-text">Canada</a></li>
+				    <li><a href="#!" class="white-text">USA</a></li>
+				</ul>
+				
+            </div>
+	        
+	        <div class="row center" style="padding-top:40px;">
+	        	<div id="players" style="overflow-y: scroll; height:320px;">
+	        		
+	        		<br>
+	        	</div>
+	            
+            	
+            	<div style="padding-top:40px;">
+            	    <a class="white-text" href="mainMenu.html">Cancel</a>
+            	</div>
+            	<br>
+      	    </div>
+        </div>
+
+    </div>
+   
+   
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  	<script src="js/materialize.js"></script>
+  	<script src="js/init.js"></script>
+</body>
+
+</html>

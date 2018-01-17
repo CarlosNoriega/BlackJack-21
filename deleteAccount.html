@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>21</title>
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://www.gstatic.com/firebasejs/3.5.1/firebase.js"></script>
+	<script src="js/deleteAcount.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <br>
+    	<div class="center">
+    		<img src="img/logo.png"></img>
+    	</div>
+    	
+    	<h3 class="header center white-text">Delete your account</h3>
+    	
+	    <div class="row">
+	    	<div class="input-field col s2 m4"></div>
+	    	<div class="input-field col s8 m4">
+	        	<input id="email" type="email" class="validate white-text">
+	        	<label for="email">Email</label>
+	        </div>
+	        <div class="input-field col s2 m4"></div>
+	    </div>
+	      
+	    <div class="row">
+	    	<div class="input-field col s2 m4"></div>
+		    <div class="input-field col s8 m4">
+		       	<input id="password" type="password" class="validate white-text">
+		      	<label for="password">Password</label>
+	        </div>
+	        <div class="input-field col s2 m4"></div>
+	    </div>
+	    
+	    <div class="row center">
+        	<button id="delete" class="btn-large waves-effect waves-light  blue darken-1" onclick="reauthenticateUser()">Delete account</button>
+        	<br><br>
+        	<a class="white-text" href="mainMenu.html">Cancel</a>
+      	</div>
+    </div>
+   
+   
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  	<script src="js/materialize.js"></script>
+  	<script src="js/init.js"></script>
+</body>
+
+</html>

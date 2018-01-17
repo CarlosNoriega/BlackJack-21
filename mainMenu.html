@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>21</title>
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://www.gstatic.com/firebasejs/3.5.1/firebase.js"></script>
+	<script src="js/inicio.js"></script>
+</head>
+
+<body>
+    
+    <a class='settings dropdown-button' href='#' data-activates='dropdown1'><i class="material-icons white-text">settings</i></a>
+
+    <!-- Dropdown Structure -->
+    <ul id='dropdown1' class='dropdown-content transparent'>
+        <li><a class="white-text" href="deleteAccount.html">Delete account?</a></li>
+    </ul>
+    
+    
+    <a class= "exit" onclick="singout()"><img src="img/exit.png"></img></a>
+    
+    <div class="container">
+        <br>
+        <div class="row">
+            <a href="joinGame.html"><img class="col s12 m6 left" src="img/join.png"></img></a>
+            <a href="createGame.html"><img class="col s12 m6 right" src="img/create.png"></img></a>
+        </div>
+         
+        <div class="row">
+            <a href="scores.html"><img class="col s12 m6" src="img/scores.png"></img></a>
+            <a href="friends.html"><img class="col s12 m6" src="img/friends.png"></img></a>
+        </div>
+    </div>
+    
+   
+   
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  	<script src="js/materialize.js"></script>
+  	<script src="js/init.js"></script>
+</body>
+
+</html>

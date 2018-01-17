@@ -1,0 +1,87 @@
+body {
+   background-image: url('/img/bg.png'); 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+a{
+   font-size: 18px;
+}
+
+.create{
+   background-image: url('/img/rec2.png');
+   background-size: 100% 100%;
+}
+
+.friends{
+   background-image: url('/img/rec4.png');
+   background-size: 100% 100%;
+}
+
+.scores{
+   background-image: url('/img/rec3.png');
+   background-size: 100% 100%;
+}
+
+.join{
+   background-image: url('/img/rec1.png');
+   background-size: 100% 100%;
+}
+
+.exit {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.carta {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.get {
+  position: fixed;
+  top: 90%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.pass {
+  position: fixed;
+  top: 90%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+}
+
+.settings{
+   position:fixed; 
+   top:2%; 
+   right:2%; 
+}
+
+.friends_name{
+   font-size: 20px;
+}
+
+.dropdown-content {
+   overflow-y: visible;
+}
+
+.dropdown-content .dropdown-content {
+   margin-left: 100%;
+}
+
+ul.dropdown-content.select-dropdown li span {
+    color: #9e9e9e; 
+}
+
+canvas {
+    height: 600;
+    width: 600;
+ }
